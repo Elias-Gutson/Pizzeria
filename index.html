@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Pizzeria Emanuel</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="header1">
         <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
@@ -37,7 +37,7 @@
   </div>
 </nav>
     </header>
-    <main class="container my-5">
+    <main class="container flex-grow-1 py-5">
 
         <section class="row align-items-center">
           <h1 class="text-center">Bienvenidos a Pizzeria Emanuel</h1>
@@ -45,7 +45,7 @@
                 <img src="./Assets/Fotos/logo 2 pintado.png" alt="logo2">
             </div>
             <div class="col-md-6 pt-5">
-              <p>
+              <p class="main-text">
                 En Pizzería Emanuel, creemos que una buena pizza no solo se disfruta con el paladar, sino también con el alma. Somos parte del barrio, de sus historias, de sus tardes tranquilas y de sus noches movidas. Acá la pizza se sirve con cariño, con masa casera, salsa con receta familiar y ese olorcito que invade la cuadra cada vez que abrimos el horno.
                 Desde nuestros comienzos, nos propusimos algo simple pero importante: que cada cliente se sienta como en casa. Conocemos a quienes vienen todas las semanas a buscar “la de siempre”, a los que se sientan con los chicos a compartir una fugazzeta, y a los que descubren nuestra muzza por primera vez y se enamoran.
                 En Pizzería Emanuel no hay secretos: solo trabajo hecho con amor, ingredientes frescos y una tradición que se respeta en cada porción. Ya sea para llevar, para comer en el local o para disfrutar en la vereda con amigos, siempre vas a encontrar la misma calidez y el mismo sabor.
@@ -53,13 +53,17 @@
               </p>
             </div>
         </section>
-        <footer>
-          <p class="mt-3">&copy; 2025 Pizzería Emanuel. Todos los derechos reservados.</p>
-          <p class="mt-3">📍 Av. Siempreviva 123, Barrio Los Aromos</p>
-          <p class="mt-3">📞 Teléfono: (011) 1234-5678 | 📱 WhatsApp: 11-2345-6789</p>
-        </footer>
+
     </main>
+
     
+       <footer class="text-center py-4">
+    <div class="container"> 
+        <p class="mb-1">&copy; 2025 Pizzería Emanuel. Todos los derechos reservados.</p>
+        <p class="mb-1">📍 Av. Siempreviva 123, Barrio Los Aromos</p>
+        <p class="mb-0">📞 Teléfono: (011) 1234-5678 | 📱 WhatsApp: 11-2345-6789</p>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
