@@ -3,71 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../styles/styles.css" />
     <title>Menu</title>
   </head>
-  <body>
-    <header class="header1">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <img
-            class="foto-nav"
-            src="../Assets/Fotos/logo_transparente.png"
-            alt="logo1"
-          />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+    <body>
+        <header class="header1">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <img class="foto-nav" src="../Assets/Fotos/logo_transparente.png"alt="logo1"/>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Pages/galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Pages/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Pages/contactanos.html"
-                  >Contactanos</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Pages/contactanos.html">Contactanos</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        </header>
 
     <main>
-      <section class="menu">
-        <div class="left-menu">
-          <div class="cuatro-img">
-            <img
-              src="../Assets/Fotos/pizza cuatro quesos.png"
-              alt="cuantro quesos"
-            />
-          </div>
+      <section class="menu-container">
 
-          <div class="cuatro-txt">
+        <div class="pizza-1">
+          <img src="../Assets/Fotos/pizza cuatro quesos.png"alt="cuantro quesos"/>
+          <div class="pizza-text">
             <h2>Pizza Cuatro Quesos</h2>
             <p>
               Mozzarella, roquefort, parmesano y queso crema sobre una base
@@ -75,10 +51,11 @@
               del queso.
             </p>
           </div>
-          <div class="Margherita-img">
-            <img src="../Assets/Fotos/pizza Margherita.png" alt="margherita" />
-          </div>
-          <div class="margherita-txt">
+        </div>
+
+        <div class="pizza-2">
+          <img src="../Assets/Fotos/pizza Margherita.png" alt="margherita" />
+          <div class="pizza-text">
             <h2>Pizza Margherita</h2>
             <p>
               Salsa de tomate casera, mozzarella fresca y albahaca sobre masa
@@ -86,32 +63,37 @@
             </p>
           </div>
         </div>
-        <div class="right-menu">
-          <div class="peperoni-img">
-            <img src="../Assets/Fotos/pizza peperoni.png" alt="peperoni" />
-          </div>
-          <div class="peperoni-txt">
+
+        <div class="pizza-3">
+          <img src="../Assets/Fotos/pizza peperoni.png" alt="peperoni" />
+          <div class="pizza-text">
             <h2>Pizza Peperoni</h2>
             <p>
               Mozzarella fundida y finas rodajas de pepperoni sobre salsa de
               tomate. Un clásico con un toque picante y lleno de sabor.
             </p>
-         </div>
+          </div>
+        </div>
 
-         <div class="pizza-suprema">
-            <div class="suprema-img">
-                <img src="../Assets/Fotos/pizza suprema.png" alt="suprema">
-            </div>
-            <div class="suprema-txt">
-                <h2>Pizza Suprema</h2>
-                <P>
-                    Mozzarella, jamón, morrones, cebolla, aceitunas y huevo. Una combinación completa y sabrosa para los que lo quieren todo.
-                </P>
-            </div>
-         </div>
-            
+        <div class="pizza-4">
+          <img src="../Assets/Fotos/pizza suprema.png" alt="suprema">
+          <div class="pizza-text">
+            <h2>Pizza Suprema</h2>
+            <p>
+            Mozzarella, jamón, morrones, cebolla, aceitunas y huevo. Una combinación completa y sabrosa para los que lo quieren todo.
+          </p>
+          </div>
+        </div>
       </section>
     </main>
+
+     <footer class="text-center py-4">
+        <div class="container"> 
+          <p class="mb-1">&copy; 2025 Pizzería Emanuel. Todos los derechos reservados.</p>
+          <p class="mb-1">📍 Av. Siempreviva 123, Barrio Los Aromos</p>
+          <p class="mb-0">📞 Teléfono: (011) 1234-5678 | 📱 WhatsApp: 11-2345-6789</p>
+        </div>
+        </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
