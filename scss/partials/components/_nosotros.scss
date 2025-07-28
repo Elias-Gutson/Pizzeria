@@ -1,0 +1,37 @@
+.container-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+
+        .img-a {
+            width: 500px;
+            max-width: 700px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .txt-a {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            padding: 0 10px;
+        }
+
+            .img-a {
+                width: 54%;
+                max-width: none;
+            }
+
+            .txt-a {
+                width: 50%;
+                text-align: left;
+                padding: 0;
+            }
+        }
