@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 .contact-section {
     padding: 60px 20px; 
     max-width: 1200px; 
@@ -14,14 +16,14 @@
 
 .contact-header h2 {
     font-size: 3em;
-    color: #2c3e50;
+    color:variables.$blue;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .contact-header p {
     font-size: 1.1em;
-    color: #555;
+    color:variables.$grey;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
@@ -29,7 +31,7 @@
 
 .contact-info p {
     font-size: 1.05em;
-    color: #666;
+    color:variables.$grey;
     margin-bottom: 15px;
     line-height: 1.5;
     margin-top: 5px;
