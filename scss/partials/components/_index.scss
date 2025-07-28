@@ -1,8 +1,8 @@
+@use "../utilities/mixins";
+
 .index-content{
-  display: flex;
+  @include mixins.flex(row, space-around, center);
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
   text-align: center;
   width: 100%;
 }
@@ -10,7 +10,6 @@
 .main-text{
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .img-index{
@@ -21,5 +20,5 @@
     position: relative; 
     z-index: 2; 
     text-align: center; 
-    font-size: 18px;
+    font-size: 16px;
 }

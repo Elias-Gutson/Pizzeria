@@ -1,6 +1,9 @@
+// Base
 @use "./partials/base/reset";
 @use "./partials/base/body";
 @use "./partials/base/tipografia";
+
+// Components
 @use "./partials/components/navbar";
 @use "./partials/components/index";
 @use "./partials/components/menu";
