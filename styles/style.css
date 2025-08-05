@@ -187,7 +187,6 @@ tipografia.scss body {
   flex-direction: center;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 }
 .top-section .cocineros-img {
   width: 100%;
@@ -223,7 +222,7 @@ tipografia.scss body {
 }
 .bot-section .galery-item {
   width: 100%;
-  height: 220px;
+  height: 30vh;
   object-fit: cover;
   display: block;
   border-radius: 8px;
@@ -232,9 +231,9 @@ tipografia.scss body {
 }
 .bot-section .galery-item img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
-  display: block;
+  object-position: center;
 }
 
 footer {
