@@ -49,9 +49,14 @@ tipografia.scss body {
 .index-content .main-text p {
   margin: 0 auto;
   font-size: 20px;
-  background-color: rgb(224, 224, 186);
+  background-color: #fff4e8;
   padding: 15px;
   border-radius: 10px;
+}
+.index-content .main-text p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(236, 195, 148);
 }
 
 .main-text {
@@ -65,7 +70,7 @@ tipografia.scss body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 40px 20px;
+  padding: 30px 20px;
   margin: 0 auto;
 }
 
@@ -97,6 +102,13 @@ tipografia.scss body {
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
+}
+
+.h1-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
 }
 
 .container-about {
