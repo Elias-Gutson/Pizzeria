@@ -2,15 +2,16 @@
 .menu-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    padding: 20px;
-    max-width: 1000px;
+    gap: 20px;
+    padding: 40px 20px;
     margin: 0 auto;
+   
 }
 
 .menu-container img{
-    width: 250px;
-    height: auto;
+    width: 200px;       
+    height: 200px;
+    object-fit: cover; 
     border-radius: 10%;
     margin-right: 20px;
     border: 1px solid #ddd;
@@ -36,3 +37,5 @@
   justify-content: center;
   max-width: 100%;
 }
+
+

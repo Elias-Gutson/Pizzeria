@@ -1,27 +1,52 @@
 @use "../utilities/mixins";
-@use "../utilities/mixins";
+@use "../utilities/variables";
 
-.index-content{
-  @include mixins.flex(row, space-around, center);
-  flex-wrap: wrap;
-  text-align: center;
-  width: 100%;
+.index-content {
+    max-width: 800px; 
+    margin: 0 auto;   
+    padding: 10px;
+    text-align: center; 
+
+    h1 {
+        
+        font-size: 30px;
+        color: #333;
+    }
+
+    .img-index {
+       
+        img {
+            max-width: 351px; 
+            height: auto;
+        }
+    }
+
+    .main-text {
+        text-align: justify; 
+        line-height: 1.2;   
+        p {
+            margin: 0 auto; 
+           font-size: 20px;
+           background-color: rgb(224, 224, 186);          
+           padding: 15px;
+           border-radius: 10px;
+        }
+    }
+
+
 }
 
 
-.main-text{
-  max-width: 100%;
-  height: auto;
-}
 
-.img-index{
-  width: 80%;
-  height: auto;
-}
+
+
+
+
 
 .main-text{
     position: relative; 
     text-align: center; 
-    font-size: 16px;
+    justify-content: center;
+    font-size: 20px;
 }
 
