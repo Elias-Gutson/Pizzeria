@@ -11,6 +11,14 @@ tipografia.scss body {
   font-family: "Roboto", sans-serif;
 }
 
+.container-about .txt-a {
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: rgb(236, 195, 148);
+  padding: 15px;
+  border-radius: 10px;
+}
+
 .navbar {
   background-color: #2c3e50;
 }
@@ -127,18 +135,17 @@ tipografia.scss body {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
-.container-about .txt-a {
-  font-size: 16px;
-  color: #333;
-}
 .container-about .img-a {
   width: 450px;
   height: auto;
 }
 .container-about .txt-a {
-  width: 50%;
-  text-align: left;
-  padding: 0;
+  background-color: #fff4e8;
+}
+.container-about .txt-a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(236, 195, 148);
 }
 
 .contact-section {
