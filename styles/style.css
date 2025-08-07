@@ -11,7 +11,7 @@ tipografia.scss body {
   font-family: "Roboto", sans-serif;
 }
 
-.container-about .txt-a {
+.txt-a {
   margin: 0 auto;
   font-size: 20px;
   background-color: rgb(236, 195, 148);
@@ -121,28 +121,36 @@ tipografia.scss body {
 
 .container-about {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  gap: 30px;
-  max-width: 1000px;
   margin: 50px auto;
   padding: 20px;
 }
 .container-about .img-a {
-  width: 500px;
-  height: auto;
+  height: 500px;
+  width: auto;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
-.container-about .img-a {
-  width: 450px;
-  height: auto;
+.container-about .map {
+  width: 500px;
+  height: 500px;
+  margin-right: 100px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
-.container-about .txt-a {
+
+.txt-a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.txt-a {
   background-color: #fff4e8;
 }
-.container-about .txt-a:hover {
+.txt-a:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   background-color: rgb(236, 195, 148);

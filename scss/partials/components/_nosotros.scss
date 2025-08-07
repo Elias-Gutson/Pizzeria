@@ -3,34 +3,42 @@
 @use "../utilities/extend";
 
 .container-about {
-      @include mixins.flex(column, center, center);
-        gap: 30px;
-        max-width: 1000px;
+      @include mixins.flex(row, space-around, center);
+        
         margin: 50px auto;
         padding: 20px;
 
         .img-a {
-            width: 500px;
-            height: auto;
+            height: 500px;
+            width: auto;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         }
-            .img-a {
-                width: 450px;
-                height: auto;
-            }
+        
+        .map{ 
+            width: 500px;
+            height: 500px;
+            margin-right: 100px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
-        .txt-a {
-            @extend %text-type
+        }    
+        
+}
+
+
+.txt-a {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        @extend %text-type
         }
+
         .txt-a{
             background-color: #fff4e8;
-
-        
-        &:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-          background-color: rgb(236, 195, 148);
+            &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: rgb(236, 195, 148);
+            }
         }
-        }
-}
