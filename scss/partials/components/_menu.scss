@@ -1,4 +1,6 @@
+@use "../utilities/mixins" as *;
 @use "../utilities/variables";
+
 
 .menu-container{
     display: grid;
@@ -6,7 +8,10 @@
     gap: 20px;
     padding: 30px 20px;
     margin: 0 auto;
-   
+
+    @include tablet{
+        grid-template-columns: 1fr;
+    }
 }
 
 .menu-container img{
@@ -16,6 +21,12 @@
     border-radius: 10%;
     margin-right: 20px;
     border: 1px solid #ddd;
+
+    @include mobile {
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+    }
 }
 
 .menu-container > div{
@@ -24,13 +35,20 @@
     padding: 10px;
 }
 
-.pizza-text h2{
+
+.pizza-text h2 {
     margin-top: 0;
     margin-bottom: 10px;
     color: variables.$grey;
     display: flex;
-    align-items: start
+    align-items: start;
+
+   
+    @include mobile {
+        justify-content: center;
+    }
 }
+
 
 .pizza-text {
   display: flex;

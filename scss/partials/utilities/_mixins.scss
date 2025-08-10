@@ -5,3 +5,14 @@
     align-items: $aling;
 }
 
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
