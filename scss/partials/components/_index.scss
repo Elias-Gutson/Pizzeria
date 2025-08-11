@@ -20,8 +20,13 @@
         }
 
         @include mixins.ipad{
-            font-size: 28px;
+            font-size: 30px;
             margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        @include mixins.ipad-pro{
+            font-size: 80px;
         }
     }
 
@@ -37,7 +42,9 @@
         }
 
         @include mixins.ipad{
-            max-width: 300px;
+            margin-top: 25px;
+            height: 400px;
+            width: auto;
         }
     }
 
@@ -64,10 +71,15 @@
            }
 
            @include mixins.ipad{
-            padding: 0 15px;
+            font-size: 25px;
+            padding: 10 15px;
+            margin-top: 10px;
             line-height: 1.4;
            }
 
+           @include mixins.ipad-pro{
+            font-size: 32px;
+           }
 
              &:hover {
               transform: translateY(-3px);
@@ -87,16 +99,6 @@
     justify-content: center;
     font-size: 20px;
 
-    @include mixins.tablet{
-        font-size: 18px;
-    }
-
-    @include mixins.mobile{
-        font-size: 16px;
-    }
-
-    @include mixins.ipad{
-        font-size: 19px;
-    }
+   
 }
 

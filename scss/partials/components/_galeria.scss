@@ -7,6 +7,7 @@
   height: 60vh;
   overflow: hidden;
   @include mixins.flex(center, center, center);
+  
  
  
   .cocineros-img {
@@ -27,12 +28,18 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
 
+   
+
     p {
       color:variables.$grey;
       font-size: 2.2em;
       font-weight: bold;
       margin: 0;
       text-transform: uppercase;
+
+       @include mixins.mobile{
+       font-size: 1.1em;
+    }
     }
   }
 }
@@ -49,6 +56,10 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+     @include mixins.mobile{
+      height: 50%;
+    }
 
     img {
      width: 100%;

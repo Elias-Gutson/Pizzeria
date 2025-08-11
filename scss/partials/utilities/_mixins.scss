@@ -24,13 +24,6 @@
     }
 }
 
-@mixin ipad-air {
-    @media (min-width:820px) and (max-width: 1180px) {
-        @content;
-
-    }
-}
-
 @mixin ipad-pro {
     @media (min-width:1024px) and (max-width: 1366px) {
         @content;
