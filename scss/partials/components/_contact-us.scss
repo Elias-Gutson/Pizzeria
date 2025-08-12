@@ -1,3 +1,4 @@
+@use "../utilities/mixins";
 @use "../utilities/variables";
 
 .contact-section {
@@ -7,6 +8,18 @@
     background-color: #f7eae0; 
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+
+    @include mixins.ipad{
+        max-width: 100%px;
+    }
+    
+    @include mixins.mobile{
+        max-width: 100%;
+    }
+
+    @include mixins.mobile{
+        max-width: 100%;
+    }
 }
 
 .contact-header {
@@ -29,10 +42,50 @@
     line-height: 1.6;
 }
 
+.contact-content{
+    height: 400px;
+
+
+    @include mixins.tablet{
+        max-width: 800px;
+    }
+}
+
 .contact-info p {
-    font-size: 1.05em;
+    font-size: 16px;
     color:variables.$grey;
     margin-bottom: 10px;
     line-height: 1.5;
-    margin-top: 5px;
+    margin-top: 6px;
+
+    @include mixins.mobile{
+
     }
+    
+    }
+
+.form-button{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+
+    &:hover {
+     background-color: #007bff;
+     color: white;
+     }
+}
+
+.info-text{
+    margin-bottom: 15px;
+}
+
+.foto-local{
+    @include mixins.flex(row, center, center);
+    height: 250px;
+    width: auto;
+}

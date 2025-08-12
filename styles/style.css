@@ -270,6 +270,21 @@ tipografia.scss body {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-section {
+    max-width: 100% px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-section {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .contact-section {
+    max-width: 100%;
+  }
+}
 
 .contact-header {
   text-align: center;
@@ -291,12 +306,48 @@ tipografia.scss body {
   line-height: 1.6;
 }
 
+.contact-content {
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .contact-content {
+    max-width: 800px;
+  }
+}
+
 .contact-info p {
-  font-size: 1.05em;
+  font-size: 16px;
   color: #333;
   margin-bottom: 10px;
   line-height: 1.5;
-  margin-top: 5px;
+  margin-top: 6px;
+}
+.form-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.info-text {
+  margin-bottom: 15px;
+}
+
+.foto-local {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: auto;
 }
 
 .top-section {
@@ -375,12 +426,6 @@ footer {
   background-color: #2c3e50;
   color: #fff4e8;
   padding-top: 8px;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  footer {
-    height: 100%;
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
