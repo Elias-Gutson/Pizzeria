@@ -367,6 +367,11 @@ tipografia.scss body {
   object-position: center;
   position: absolute;
 }
+@media (max-width: 576px) {
+  .top-section .cocineros-img {
+    height: 100%;
+  }
+}
 .top-section .text-box {
   position: relative;
   z-index: 2;
@@ -408,7 +413,7 @@ tipografia.scss body {
 }
 @media (max-width: 576px) {
   .bot-section .galery-item {
-    height: 50%;
+    height: 100%;
   }
 }
 .bot-section .galery-item img {
@@ -416,6 +421,11 @@ tipografia.scss body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+@media (max-width: 576px) {
+  .bot-section .galery-item img {
+    height: 200px;
+  }
 }
 
 footer {
